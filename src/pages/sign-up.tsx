@@ -23,7 +23,7 @@ const SignUp = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <PageTitle title="Form Page" />
+        <PageTitle title="Sign up Page" />
 
         <Box pt={10} maxW="xl">
           <Text pb={4}>Sign up for an account</Text>

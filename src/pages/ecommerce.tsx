@@ -1,5 +1,4 @@
-import { Button } from "@chakra-ui/button";
-import { Box } from "@chakra-ui/layout";
+import { Button, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import { Layout } from "../components/Layout/Layout";
@@ -20,11 +19,17 @@ const Ecommerce = () => {
 
         <PageTitle title="Ecommerce" />
 
-        <Box py={10}>
+        <Flex py={10} gap={6}>
           <Button size="lg" variant="solid" colorScheme="blue" id="addToCart">
             Add to cart
           </Button>
-        </Box>
+          <Button size="lg" variant="solid" colorScheme="green" id="checkout">
+            Checkout
+          </Button>
+          <Button size="lg" variant="solid" colorScheme="orange" id="buyNow">
+            Buy Now
+          </Button>
+        </Flex>
       </Layout>
     </>
   );

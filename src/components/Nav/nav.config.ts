@@ -31,4 +31,16 @@ export const navConfig: NavConfigType[] = [
     isExternal: false,
     id: "form",
   },
+  {
+    display: "Sign up",
+    link: "/sign-up",
+    isExternal: false,
+    id: "sign-up",
+  },
+  {
+    display: "Video",
+    link: "/video",
+    isExternal: false,
+    id: "video",
+  },
 ];

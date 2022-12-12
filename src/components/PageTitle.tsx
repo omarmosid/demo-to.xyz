@@ -8,7 +8,7 @@ type PageTitleProps = {
 const PageTitle: React.FC<PageTitleProps> = ({ title }) => {
   return (
     <>
-      <Heading as="h1" fontSize="4xl">
+      <Heading as="h1" fontSize="4xl" pb={4}>
         {title}
       </Heading>
     </>
