@@ -13,12 +13,12 @@ import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
 import { PageTitle } from "../components/PageTitle";
 
-export default function Form() {
+const SignUp = () => {
   return (
     <>
       <Layout>
         <Head>
-          <title>Form Page | Demoto.xyz</title>
+          <title>Sign up | Demoto.xyz</title>
           <meta name="description" content="A demo app to fiddle around with" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -26,35 +26,32 @@ export default function Form() {
         <PageTitle title="Form Page" />
 
         <Box pt={10} maxW="xl">
-          <Text pb={4}>Please fill in the form below</Text>
-          <form id="sales-lead-form">
+          <Text pb={4}>Sign up for an account</Text>
+          <form id="signup-form">
             <VStack gap={4}>
-              <FormControl>
-                <FormLabel>Your name</FormLabel>
-                <Input type="text" />
-              </FormControl>
-
               <FormControl>
                 <FormLabel>Email address</FormLabel>
                 <Input type="email" />
               </FormControl>
 
               <FormControl>
-                <FormLabel>Your Message</FormLabel>
-                <Textarea
-                  placeholder="Here is a sample placeholder"
-                  size="sm"
-                />
+                <FormLabel>Password</FormLabel>
+                <Input type="password" />
+              </FormControl>
+
+              <FormControl>
+                <FormLabel>Confirm Password</FormLabel>
+                <Input type="password" />
               </FormControl>
 
               <Button
-                id="submit"
-                colorScheme="purple"
+                id="sign-up"
+                colorScheme="facebook"
                 variant="solid"
                 type="submit"
                 width="full"
               >
-                Submit
+                Sign Up
               </Button>
             </VStack>
           </form>
@@ -62,4 +59,6 @@ export default function Form() {
       </Layout>
     </>
   );
-}
+};
+
+export default SignUp;
