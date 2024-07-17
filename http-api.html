@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP API</title>
+  </head>
+  <body>
+    <h1>This is the HTTP API</h1>
+  </body>
+  <script>
+    console.log("Sending HTTP event");
+    const data = {
+      events: [
+        {
+          client: {
+            __zarazTrack: "HTTP Event API",
+            value: "200",
+          },
+        },
+      ],
+    };
+    fetch("https://demoto.xyz/zaraz/api/test", {
+      method: "POST", // HTTP method
+      headers: {
+        "Content-Type": "application/json", // Ensure the server knows we're sending JSON
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log("data response::", data))
+      .catch((error) => console.log("error::", error));
+  </script>
+</html>
