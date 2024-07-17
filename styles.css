@@ -1,0 +1,18 @@
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4.8em;
+}
+
+p {
+    font-size: 2em;
+}
